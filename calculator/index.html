@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1><b>CALCULATOR</b></h1>
+<div id="box">
+  <input type="text" id="result" value="" disabled><br>
+  <button class="numBtn" onclick="press('7')">7</button><button class="numBtn" onclick="press('8')">8</button><button class="numBtn" onclick="press('9')">9</button><button class="grayBtn" onclick="clearResult()">C</button><br>
+  <button class="numBtn" onclick="press('4')">4</button><button class="numBtn" onclick="press('5')">5</button><button class="numBtn" onclick="press('6')">6</button><button class="grayBtn" onclick="setOperator('/')">/</button><br>
+  <button class="numBtn" onclick="press('1')">1</button><button class="numBtn" onclick="press('2')">2</button><button class="numBtn" onclick="press('3')">3</button><button class="grayBtn" onclick="setOperator('*')">*</button><br>
+  <button class="numBtn" onclick="press('0')">0</button><button class="numBtn" onclick="press('.')">.</button><button class="grayBtn" onclick="setOperator('-')">-</button><button class="grayBtn" onclick="setOperator('+')">+</button><br>
+  <button id="equalBtn" onclick="calculate()">=</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

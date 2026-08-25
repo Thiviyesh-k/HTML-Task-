@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Products List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Sports Products List</h1>
+  <p class="subtitle">Everything here is saved in your browser (localStorage) — no backend involved.</p>
+  <div class="top-bar">
+    <input type="text" id="searchInput" placeholder="Search by name or category...">
+    <button id="searchBtn">Search</button>
+    <button id="addBtn">+ Add Product</button>
+  </div>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Product Name</th>
+          <th>Category</th>
+          <th>Price (₹)</th>
+          <th>Stock</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="productTableBody">
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <h2>Add a Product</h2>
+    <input type="text" id="nameInput" placeholder="Product name">
+    <input type="text" id="categoryInput" placeholder="Category">
+    <input type="number" id="priceInput" placeholder="Price">
+    <input type="number" id="stockInput" placeholder="Stock">
+    <div class="modal-actions">
+      <button id="saveBtn">Add</button>
+      <button id="cancelBtn">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
